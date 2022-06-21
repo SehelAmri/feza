@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="home.js"></script>
+        <link href="home.css"  rel="stylesheet">
+        <title>Feza International School</title>
+    </head>
+    <body>
+        <div id="hero">
+            <div class="navbar">
+                <img src="assets/feza_logo.png" class="logo">
+                <div style="color:white; font-weight:bold">
+                    <a href="about.html" class="abtBtn">about</a>
+                    |
+                    <a href="contact.html" class="abtBtn">contact</a>
+                </div>
+            </div>
+            <div class="container">
+            <div class="info">
+                <h1>WELCOME</h1>
+            <p>We believe that it is the duty of all of us working at Feza Secondary School to make a difference to improve our <br>children's learning each day,everyday. These changes are made in the belief that <br>they will have a transformational effect on our children's lives</p>
+            <button type="button" id="regPad" class="button">register</button>
+            <button type="button" id="alumni" class="button">alumni</button>
+        </div>
+          
+        </div>
+        <div class="form">
+            <h2>CREATE ACCOUNT</h2>
+            <form method="post" action="home.php">
+                <input type="text" class="regInput"required name="fname" placeholder="First name">
+                <input type="text" class="regInput" required name="mname" placeholder="Middle name">
+                <input type="text" class="regInput" name="lname"required placeholder="Last name">
+                <input type="text" class="regInput" name="uname" required placeholder="Username">
+                <input type="password" class="regInput" name="password" pattern=".{8,}" required placeholder="Password">
+                <input type="date" class="regInput" name="dob" required placeholder="Date of birth"><br>
+                <input type="file" class="regInputF"name="cv" required placeholder="CV"><br>
+                <label class="label">Contact details</label><br>
+                <input type="email" class="regInput" name="email" required placeholder="Email address"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <input type="tel" class="regInput" name="pnum" required placeholder="Phone number">
+                <input type="text" class="regInput" name="insta" required placeholder="Instagram">
+                <input type="text" class="regInput" name="twitter" required placeholder="Twitter">
+                <input type="text" class="regInput" name="fb" required placeholder="Facebook"><br>
+               <input type="submit" class="regBtn" name="btn" value="SIGN UP">
+            </form>
+            <p>are you an alumni? <button type="button" class="txtBtn" id="alumni2">register here</button></p>
+        </div>
+        <div class="alumform">
+            <h2>CREATE ALUMNI ACCOUNT</h2>
+            <form method="post" action="alumni.php">
+                <input type="text" class="regInput"required name="aname" placeholder="Alumnus name" maxlength="30">
+                <input type="year" class="regInput" required name="yoe" placeholder="Year of enrollment">
+                <input type="year" class="regInput" name="yog"required placeholder="Year of Graduation">
+                <input type="text" class="regInput" name="headmasterE" required placeholder="headmaster on enrollment">
+                <input type="text" class="regInput" name="headmasterG" required placeholder="headmaster on graduation">
+                <input type="text" class="regInput" name="famous" required placeholder="famous teacher during graduation" maxlength="30">
+                <select name="results" class="regInput" id="results">
+                    <option value="DIV I">DIV I</option>
+                    <option value="DIV II">DIV II</option>
+                    <option value="DIV III">DIV III</option>
+                    <option value="DIV IV">DIV IV</option>
+                  </select><br>
+                <input type="text" class="regInput" name="occupation" required placeholder="current occupation" maxlength="20">
+                <input type="text" class="regInput" name="address" required placeholder="address">
+                <input type="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="regInput" name="email" required placeholder="email">
+                <input type="text" class="regInput" name="phone" required placeholder="phone"> <br>           
+                <input type="submit" class="regBtn" name="btn" value="SIGN UP">
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
